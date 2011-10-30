@@ -82,6 +82,7 @@ public class Destinations {
 		Destinations dest = get(thistag);
 		dest.explore();
 		Node r = dest.getDir(destname);
+		TrainCarts.plugin.getServer().getConsoleSender().sendMessage("[TrainCarts] "+destname+" is "+r.dir.toString()+" "+(int)r.dist+"m");
 		return r.dir;
 	}
 	
